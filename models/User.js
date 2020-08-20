@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 const Schema = mongoose.Schema;
+
 if (mongoose.connection.readyState === 0) {
   mongoose.connect(require("./connection-string"), {
     useNewUrlParser: true,
